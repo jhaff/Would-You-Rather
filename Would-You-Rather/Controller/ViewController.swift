@@ -15,12 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     
-    let quiz = [
-        Question(text: "a dog barks", answer: "True"),
-        Question(text: "a cow moos", answer: "True"),
-        Question(text: "a cat growls", answer: "False")
-    ]
-    
+    var quizBrain = QuizBrain()
+        
     var questionNumber = 0
     
     override func viewDidLoad() {
@@ -30,29 +26,26 @@ class ViewController: UIViewController {
 
     @IBAction func answerButtonPressd(_ sender: UIButton) {
         
-        let userAnswer = sender.currentTitle
-        let actualAnswer = quiz[questionNumber].answer
+        let userAnswer = sender.currentTitle!
+        let userGotItRight = quizBrain.checkAnswer(userAnswer)
         
-        if userAnswer == actualAnswer {
+        if userGotItRight {
             sender.backgroundColor = UIColor.green
         } else {
             sender.backgroundColor = UIColor.red
         }
         
-        if questionNumber < quiz.count - 1{
-            questionNumber += 1
-        } else {
-            questionNumber = 0
-        }
+        quizBrain.nextQuestion()
+        
         updateUI()
     }
 
     func updateUI() {
-        questionLabel.text = quiz[questionNumber].text
+        questionLabel.text = quizBrain.getQuestionText()
         
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(resetButtonColor), userInfo: nil, repeats: false)
         
-        progressBar.progress = Float(questionNumber) / Float(quiz.count)
+        progressBar.progress = quizBrain.getProgress()
     }
     
     @objc func resetButtonColor() {
