@@ -84,7 +84,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="falseButtoon" destination="tbn-vQ-GyC" id="oAA-MP-UNv"/>
+                        <outlet property="falseButton" destination="tbn-vQ-GyC" id="oAA-MP-UNv"/>
                         <outlet property="progressBar" destination="TXm-qh-7Xg" id="dR8-Zb-84N"/>
                         <outlet property="questionLabel" destination="rSI-li-mhO" id="BUf-dm-PIV"/>
                         <outlet property="trueButton" destination="oVw-Hl-IRe" id="eSK-OR-gfh"/>
