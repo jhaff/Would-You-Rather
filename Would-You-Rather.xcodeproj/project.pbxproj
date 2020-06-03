@@ -13,6 +13,7 @@
 		35441DF624871222001EDAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35441DF524871222001EDAF4 /* Assets.xcassets */; };
 		35441DF924871222001EDAF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35441DF724871222001EDAF4 /* LaunchScreen.storyboard */; };
 		35DD324F24882F5200218374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DD324E24882F5200218374 /* Main.storyboard */; };
+		35DD325124883D8D00218374 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD325024883D8D00218374 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		35441DF824871222001EDAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35441DFA24871222001EDAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35DD324E24882F5200218374 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		35DD325024883D8D00218374 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				35441DF524871222001EDAF4 /* Assets.xcassets */,
 				35441DF724871222001EDAF4 /* LaunchScreen.storyboard */,
 				35441DFA24871222001EDAF4 /* Info.plist */,
+				35DD325024883D8D00218374 /* Question.swift */,
 			);
 			path = "Would-You-Rather";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35441DF124871221001EDAF4 /* ViewController.swift in Sources */,
+				35DD325124883D8D00218374 /* Question.swift in Sources */,
 				35441DED24871221001EDAF4 /* AppDelegate.swift in Sources */,
 				35441DEF24871221001EDAF4 /* SceneDelegate.swift in Sources */,
 			);
